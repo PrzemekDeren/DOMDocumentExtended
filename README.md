@@ -18,5 +18,5 @@ $dom->loadHTML($html);
 $node = $dom->getElementsByTagName('body')[0];
 $innerHTML = $dom->innerHTML($node);
 
-echo '<pre>'.htmlentities($html).'</pre>';
+echo '<pre>'.htmlentities($innerHTML).'</pre>';
 ```
