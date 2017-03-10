@@ -10,7 +10,7 @@ require_once './DOMDocumentExtended.php';
 
 use DOMDocumentExtended;
 
-$html = "<p><strong>Bold</p><p>This shoudn't be bold.</p>";
+$html = "<p><strong>Exapmle</strong></p><p>HTML</p>";
 
 $dom = new DOMDocumentExtended;
 $dom->loadHTML($html);
