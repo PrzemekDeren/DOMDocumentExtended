@@ -8,6 +8,12 @@ class DOMDocumentExtended extends DOMDocument
 
   function innerHTML($node)
   {
-    return false;
+        $innerHTML = '';
+        $childNodes = $node->childNodes;
+        foreach($childNodes as $childNode)
+        {
+            $innerHTML .= $this->saveHTML($childNode);
+        }
+    return $innerHTML;
   }
 }
